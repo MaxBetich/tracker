@@ -3,7 +3,7 @@
 }
 
 @using Tracker.Models;
-
+<div id="showDiv">
 <h1>@Model["vendor"].Name</h1>
 <h3>Orders:</h3>
 
@@ -17,3 +17,4 @@
 <p><a href='/vendors/@Model["vendor"].Id/orders/new'>Add a new order</a></p>
 <p><a href='/vendors'>Return to Vendor List</a></p>
 <p><a href='/'>Home</a></p>
+</div>

@@ -15,7 +15,7 @@ This application allows the user to keep track of different vendors that the org
 * Run the command "dotnet restore" in your terminal to initialize the program and enable testing features.
 * Run the command "dotnet test" to run the testing software.
 * Navigate to the Tracker directory inside the root directory in your terminal.
-* Run the command "dotnet run" to build and run the program in the console window.
+* Run the command "dotnet watch run" to build and run the program in default browser window.
 
 
 ## Known Bugs
