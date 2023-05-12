@@ -14,5 +14,14 @@ namespace Tracker.Tests
       Order newOrder = new Order("test");
       Assert.AreEqual(typeof(Order), newOrder.GetType());
     }
+
+    [TestMethod]
+    public void GetName_ReturnsName_String()
+    {
+      string name = "test name";
+      Order newOrder = new Order(name);
+      string result = newOrder.Name;
+      Assert.AreEqual(name, result);
+    }
   }
 }
