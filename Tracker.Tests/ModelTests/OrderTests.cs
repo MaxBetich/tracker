@@ -11,7 +11,7 @@ namespace Tracker.Tests
     [TestMethod]
     public void OrderConstructor_CreatesInstanceOfOrder_Order()
     {
-      Order newOrder = new Order("test");
+      Order newOrder = new Order("test","");
       Assert.AreEqual(typeof(Order), newOrder.GetType());
     }
 
@@ -19,7 +19,8 @@ namespace Tracker.Tests
     public void GetName_ReturnsName_String()
     {
       string name = "test name";
-      Order newOrder = new Order(name);
+      string description = "test description";
+      Order newOrder = new Order(name, description);
       string result = newOrder.Name;
       Assert.AreEqual(name, result);
     }
