@@ -11,7 +11,8 @@ namespace Tracker.Tests
     [TestMethod]
     public void OrderConstructor_CreatesInstanceOfOrder_Order()
     {
-      Order newOrder = new Order("test","");
+      DateOnly date = new DateOnly(2023,1,1);
+      Order newOrder = new Order("test","",date);
       Assert.AreEqual(typeof(Order), newOrder.GetType());
     }
 
@@ -20,7 +21,8 @@ namespace Tracker.Tests
     {
       string name = "test name";
       string description = "test description";
-      Order newOrder = new Order(name, description);
+      DateOnly date = new DateOnly(2023,1,1);
+      Order newOrder = new Order(name, description, date);
       string result = newOrder.Name;
       Assert.AreEqual(name, result);
     }
@@ -30,7 +32,8 @@ namespace Tracker.Tests
     {
       string name = "test name";
       string description = "test description";
-      Order newOrder = new Order(name, description);
+      DateOnly date = new DateOnly(2023,1,1);
+      Order newOrder = new Order(name, description, date);
       string result = newOrder.Description;
       Assert.AreEqual(description, result);
     }
