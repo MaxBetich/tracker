@@ -48,5 +48,17 @@ namespace Tracker.Tests
       DateOnly result = newOrder.Date;
       Assert.AreEqual(date, result);
     }
+
+    [TestMethod]
+    public void GetPrice_ReturnsPrice_Int()
+    {
+      string name = "test name";
+      string description = "test description";
+      DateOnly date = new DateOnly(2023,1,1);
+      int price = 3;
+      Order newOrder = new Order(name, description, date, price);
+      int result = newOrder.Price;
+      Assert.AreEqual(price, result);
+    }
   }
 }
