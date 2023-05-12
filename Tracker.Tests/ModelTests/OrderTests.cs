@@ -34,5 +34,16 @@ namespace Tracker.Tests
       string result = newOrder.Description;
       Assert.AreEqual(description, result);
     }
+
+    [TestMethod]
+    public void GetDate_ReturnsDescription_DateOnly()
+    {
+      string name = "test name";
+      string description = "test description";
+      DateOnly date = new DateOnly(2023,1,1);
+      Order newOrder = new Order(name, description, date);
+      DateOnly result = newOrder.Date;
+      Assert.AreEqual(date, result);
+    }
   }
 }
