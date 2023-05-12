@@ -85,7 +85,7 @@ namespace Tracker.Tests
       string name = "test name";
       string description = "test description";
       DateOnly date = new DateOnly(2023,1,1);
-      int price = 3;
+      string price = "3";
       Order newOrder = new Order(name, description, date, price);
       List<Order> newList = new List<Order> {newOrder};
       string vendorName = "test vendor";

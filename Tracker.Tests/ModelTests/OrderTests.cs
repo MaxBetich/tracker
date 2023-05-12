@@ -17,7 +17,7 @@ namespace Tracker.Tests
     public void OrderConstructor_CreatesInstanceOfOrder_Order()
     {
       DateOnly date = new DateOnly(2023,1,1);
-      int price = 3;
+      string price = "3";
       Order newOrder = new Order("test","",date, price);
       Assert.AreEqual(typeof(Order), newOrder.GetType());
     }
@@ -28,7 +28,7 @@ namespace Tracker.Tests
       string name = "test name";
       string description = "test description";
       DateOnly date = new DateOnly(2023,1,1);
-      int price = 3;
+      string price = "3";
       Order newOrder = new Order(name, description, date, price);
       string result = newOrder.Name;
       Assert.AreEqual(name, result);
@@ -40,7 +40,7 @@ namespace Tracker.Tests
       string name = "test name";
       string description = "test description";
       DateOnly date = new DateOnly(2023,1,1);
-      int price = 3;
+      string price = "3";
       Order newOrder = new Order(name, description, date, price);
       string result = newOrder.Description;
       Assert.AreEqual(description, result);
@@ -52,7 +52,7 @@ namespace Tracker.Tests
       string name = "test name";
       string description = "test description";
       DateOnly date = new DateOnly(2023,1,1);
-      int price = 3;
+      string price = "3";
       Order newOrder = new Order(name, description, date, price);
       DateOnly result = newOrder.Date;
       Assert.AreEqual(date, result);
@@ -64,9 +64,9 @@ namespace Tracker.Tests
       string name = "test name";
       string description = "test description";
       DateOnly date = new DateOnly(2023,1,1);
-      int price = 3;
+      string price = "3";
       Order newOrder = new Order(name, description, date, price);
-      int result = newOrder.Price;
+      string result = newOrder.Price;
       Assert.AreEqual(price, result);
     }
 
@@ -84,12 +84,12 @@ namespace Tracker.Tests
       string name1 = "test name";
       string description1 = "test description";
       DateOnly date1 = new DateOnly(2023,1,1);
-      int price1 = 3;
+      string price1 = "3";
       Order newOrder1 = new Order(name1, description1, date1, price1);
       string name2 = "test name2";
       string description2 = "test description2";
       DateOnly date2 = new DateOnly(2023,1,2);
-      int price2 = 4;
+      string price2 = "4";
       Order newOrder2 = new Order(name2, description2, date2, price2);
       List<Order> newList = new List<Order> {newOrder1, newOrder2};
       List<Order> result = Order.GetAll();
