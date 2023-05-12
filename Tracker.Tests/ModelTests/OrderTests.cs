@@ -24,5 +24,14 @@ namespace Tracker.Tests
       Assert.AreEqual(name, result);
     }
 
+    [TestMethod]
+    public void GetDescription_ReturnsDescription_String()
+    {
+      string name = "test name";
+      string description = "test description";
+      Order newOrder = new Order(name, description);
+      string result = newOrder.Description;
+      Assert.AreEqual(description, result);
+    }
   }
 }
