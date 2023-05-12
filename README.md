@@ -5,6 +5,7 @@
 ## Technologies Used
 
 * _C#/.NET v6_
+* _HTML_
 
 ## Description
 This application allows the user to keep track of different vendors that the organization has done business with as well as see a running list of orders taken from each vendor, and displays information pertaining to each order.
